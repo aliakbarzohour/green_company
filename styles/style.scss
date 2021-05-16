@@ -1,0 +1,229 @@
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+        body {
+            display: flex;
+            flex-direction: column;
+            header {
+                .navbar {
+                    .container {
+                        .navbar-brand {
+                            img {
+                                width: 40px;
+                            }
+                        }
+                    }
+                }
+                .slide {
+                    .carousel-inner {
+                        .carousel-item {
+                            .imgs {
+                                position: relative;
+                                img {
+                                    height: 600px;
+                                }
+                                .cover {
+                                    background: rgb(0, 221, 92);
+                                    width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    z-index: 0;
+                                    opacity: 40%;
+                                }
+                            }
+                            .TEXT {
+                                top: 38%;
+                                h1 {
+                                    color: #222222;
+                                    font-weight: bold;
+                                    font-size: 50px;
+                                }
+                                p {
+                                    color: rgb(24, 24, 24);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            main {
+                .our-product {
+                    h1 {
+                        text-align: center;
+                        margin: 35px 0 25px 0;
+                        font-weight: bold;
+                    }
+                    .row {
+                        .col {
+                            .card {
+                                border-radius: 15px;
+                                .card-body {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    i {
+                                        border-radius: 50%;
+                                        background: yellowgreen;
+                                        padding: 10px;
+                                        font-size: 40px;
+                                        color: honeydew;
+                                    }
+                                    h3 {
+                                        margin-top: 10px;
+                                    }
+                                    p {}
+                                }
+                            }
+                        }
+                    }
+                }
+                .container-fluid {
+                    background-color: rgb(185, 185, 185);
+                    margin: 50px 0 0 0;
+                    .container {
+                        .about {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding: 40px;
+                            .text {
+                                h1 {
+                                    color: rgb(2, 12, 0);
+                                    margin: 0 0 10px 0;
+                                    font-weight: bold;
+                                }
+                                p {
+                                    color: rgb(26, 26, 26);
+                                }
+                            }
+                            img {
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                .suporter-slider {
+                    .carousel {
+                        .carousel-inner {
+                            .carousel-item {
+                                text-align: center;
+                                img {
+                                    width: 80px;
+                                    height: 80px;
+                                    border-radius: 50%;
+                                    overflow: hidden;
+                                }
+                                .text {
+                                    h3 {
+                                        margin: 10px 0 10px 0;
+                                    }
+                                    p {
+                                        width: 1010px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .navbar {
+                    background: rgb(0, 161, 67);
+                    .container-fluid {
+                        margin: 0;
+                        background: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        form {
+                            input {
+                                background: none;
+                                color: white;
+                                border: 2px solid white;
+                            }
+                            button {}
+                        }
+                    }
+                }
+            }
+            footer {
+                .footer {
+                    .item-box {
+                        flex-direction: row;
+                        .item {
+                            padding: 15px;
+                            h5 {
+                                font-weight: bold;
+                            }
+                            .company {
+                                width: fit-content;
+                            }
+                            .links {
+                                display: flex;
+                                flex-direction: column;
+                                .item-link {
+                                    text-decoration: none;
+                                    color: rgb(17, 17, 17);
+                                }
+                            }
+                            .gmail {}
+                            .number {}
+                            .icons {
+                                display: flex;
+                                a {
+                                    text-decoration: none;
+                                    i {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .creator {
+                text-align: center;
+                background-color: #575757;
+                // position: fixed;
+                // bottom: 0;
+                // z-index: 1;
+                h2 {
+                    font-size: 15px;
+                    color: whitesmoke;
+                }
+            }
+        }
+        
+        @media screen and (max-width:876px) {
+            body {
+                header {
+                    .slide {
+                        .carousel-inner {
+                            .carousel-item {
+                                .TEXT {
+                                    top: 15%;
+                                }
+                            }
+                        }
+                    }
+                }
+                main {
+                    .container-fluid {
+                        background-color: rgb(185, 185, 185);
+                        margin: 30px 0 0 0;
+                        .container {
+                            .about {
+                                img {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                footer {
+                    .footer {
+                        display: none;
+                    }
+                }
+            }
+        }
